@@ -36,7 +36,7 @@ def dialogflow_manychat_bridge():
             language_code = manychat_data['custom_fields']['language_code']
 
         df = DialogFlow(
-            project_id='YOUR_DIALOGFLOW_PROJECT_ID',
+            project_id='partybot-9ivs',
 
             # Avoid calling the json credentials here in code and instead
             # use a virtual environment variable named GOOGLE_APPLICATION_CREDENTIALS.
@@ -44,7 +44,7 @@ def dialogflow_manychat_bridge():
             service_account_json='./config.json',
         )
 
-        manychat_api_key = 'FILL_IN_YOUR_MANYCHAT_API_KEY'
+        manychat_api_key = '1989210301312855:9d980262392e2a73db1e5df5b0423021'
         mc = ManyChat(
             api_key=manychat_api_key,
             psid=psid,
